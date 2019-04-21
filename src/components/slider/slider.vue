@@ -1,26 +1,30 @@
 <template>
-   <div class="comp-slider text-center bg-primary" @mouseenter="mouseIn=true" @mouseleave="mouseIn=false">
-      <transition-group tag="div" class="img-slider" name="slide">
-         <div v-for="number in [currentGroup]" :key="number">
-            <div class="group">
-               <div class="row">
-                  <div class="col-6"
-                       v-for="(slide, n) in finalSlides[currentGroup]"
-                       :key="'s' + (number + currentMove + n)"
-                  >
-                     <q-img :src="slide.url"
+   <div class="comp-slider bg-transparent" style="display: inline-block;" @mouseenter="mouseIn=true" @mouseleave="mouseIn=false">
+      <div class="q-pa-lg ">
+         <transition-group tag="div" class="img-slider" name="slide">
+            <div v-for="number in [currentGroup]" :key="number">
+               <div class="group">
+                  <div class="q-col-gutter-lg row items-start justify-center">
+                     <div class="col-6"
+                          v-for="(slide, n) in finalSlides[currentGroup]"
+                          :key="'s' + (number + currentMove + n)"
                      >
-                        <div class="absolute-bottom text-body1 text-center">
-                           {{ slide.title }}
-                           {{ slide.availability }}
-                        </div>
-                     </q-img>
+                        <q-img :src="slide.url"
+                        >
+                           <div class="absolute-bottom text-body1 text-center">
+                              {{ slide.title }}
+                              {{ slide.availability }}
+                           </div>
+                        </q-img>
+                     </div>
                   </div>
                </div>
             </div>
-         </div>
-      </transition-group>
-      <div class="text-center"><q-icon :color="isPaused ? 'accent' : 'transparent'" name="pause" size="2rem" /></div>
+         </transition-group>
+      </div>
+      <div class="text-center">
+         <q-icon :color="isPaused ? 'accent' : 'transparent'" name="mdi-pause" size="2rem"/>
+      </div>
    </div>
 </template>
 
