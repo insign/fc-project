@@ -16,7 +16,7 @@
       <q-page-container>
          <router-view/>
       </q-page-container>
-      <div class="footer bg-secondary fixed-bottom">
+      <div class="footer bg-secondary fixed-bottom text-white">
          <div class="row content-center items-center">
             <div class="col-5">
                <h1>Look After&trade;</h1>
@@ -26,11 +26,11 @@
                <a class="text-accent" href="tel:1-971-diaper">1-971-diaper</a> &nbsp;
                <q-icon name="mdi-email"/>&nbsp;
                <a class="text-accent" href="mailto:confort@lookafter.com">confort@lookafter.com</a> &nbsp;
-               <q-btn round @click="openURL('https://facebook.com/lookafter')" color="primary" icon="mdi-facebook"
+               <q-btn glossy round @click="openURL('https://facebook.com/lookafter')" color="primary" icon="mdi-facebook"
                /> &nbsp;
-               <q-btn round @click="openURL('https://youtube.com/lookafter')" color="primary" icon="mdi-youtube"
+               <q-btn glossy round @click="openURL('https://youtube.com/lookafter')" color="primary" icon="mdi-youtube"
                /> &nbsp;
-               <q-btn round @click="openURL('https://instagram.com/lookafter')" color="primary" icon="mdi-instagram"
+               <q-btn glossy round @click="openURL('https://instagram.com/lookafter')" color="primary" icon="mdi-instagram"
                /> &nbsp;
             </div>
          </div>
