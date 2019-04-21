@@ -1,0 +1,62 @@
+[
+  {
+    "title": "Pampers",
+    "url"  : "statics/slides/pampers.webp",
+    "availability": "M and L available"
+  },
+  {
+    "title": "Huggies Baby",
+    "url"  : "statics/slides/huggies.webp",
+    "availability": "S and M available"
+  },
+  {
+    "title": "Babysec",
+    "url"  : "statics/slides/babysec.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Capricho",
+    "url"  : "statics/slides/capricho.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Cremer",
+    "url"  : "statics/slides/cremer.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Evolution",
+    "url"  : "statics/slides/evolution.webp",
+    "availability":"S/M/L, available"
+  },
+  {
+    "title": "MamyPoko",
+    "url"  : "statics/slides/mamy.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Personal",
+    "url"  : "statics/slides/personal.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Pompom",
+    "url"  : "statics/slides/pompom.webp",
+    "availability": "S/M/L available"
+  },
+  {
+    "title": "Moviment",
+    "url"  : "statics/slides/moviment.webp",
+    "availability": "L/XL available"
+  },
+  {
+    "title": "Plenitud Senior",
+    "url"  : "statics/slides/plenitud.webp",
+    "availability": "XL/XXL available"
+  },
+  {
+    "title": "Plenitud Active",
+    "url"  : "statics/slides/plenitud2.webp",
+    "availability": "L/XL/XXL available"
+  }
+]
