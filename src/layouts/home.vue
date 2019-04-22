@@ -55,7 +55,7 @@
 
             <q-separator/>
 
-            <q-card-section style="max-height: 50vh;min-height: 25vh;width: 30vw" class="scroll">
+            <q-card-section style="max-height: 50vh;min-height: 25vh;max-width: 400px;min-width: 300px" class="scroll">
                <div class="row q-col-gutter-lg items-center content-center justify-center">
                   <div class="col-10">
                      <q-input outlined v-model="login_email" label="E-mail"/>
@@ -80,7 +80,7 @@
                <div class="text-h6">Create User</div>
             </q-card-section>
             <q-separator/>
-            <q-card-section style="max-height: 50vh;min-height: 25vh;width: 30vw" class="scroll">
+            <q-card-section style="max-height: 50vh;min-height: 25vh;max-width: 400px;min-width: 300px" class="scroll">
                <div class="row q-col-gutter-lg items-center content-center justify-center">
                   <div class="col-10">
                      <q-input outlined v-model="create_name" ref="create_name" label="Full Name" :rules="[
