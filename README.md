@@ -1,5 +1,9 @@
 # Feracode test
 
+## DEMO
+[https://fc.helio.me]
+
+## Try
 #### Download dependencies
 
 ```bash
@@ -17,4 +21,4 @@ yarn dev
 ```bash
 yarn build
 ```
-It will be in /dist folder
+It will be in /dist/spa folder
