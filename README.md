@@ -1,7 +1,7 @@
 # Feracode test
 
 ## DEMO
-[https://fc.helio.me]
+https://fc.helio.me
 
 ## Try
 #### Download dependencies
