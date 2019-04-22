@@ -5,11 +5,11 @@ module.exports = function (ctx) {
     // app boot file (/src/boot)
     // --> boot files are part of "main.js"
     boot: [
-      'axios'
+      'axios',
     ],
 
     css: [
-      'app.styl'
+      'app.styl',
     ],
 
     extras: [
@@ -21,34 +21,33 @@ module.exports = function (ctx) {
     ],
 
     framework: {
-      all: true, // --- includes everything; for dev only!
+      // all: true, // --- includes everything; for dev only!
 
       components: [
-        'QLayout',
-        'QHeader',
-        'QDrawer',
-        'QPageContainer',
-        'QPage',
-        'QToolbar',
-        'QToolbarTitle',
         'QBtn',
+        'QCard',
+        'QCardActions',
+        'QCardSection',
+        'QDialog',
         'QIcon',
-        'QList',
-        'QItem',
-        'QItemSection',
-        'QItemLabel'
+        'QImg',
+        'QInput',
+        'QLayout',
+        'QPage',
+        'QPageContainer',
+        'QSeparator',
       ],
 
       directives: [
-        'Ripple'
+        'Ripple',
       ],
 
       // Quasar plugins
       plugins: [
-        'Notify'
+        'Notify',
       ],
 
-      iconSet: 'mdi-v3'
+      iconSet: 'mdi-v3',
       // lang: 'de' // Quasar language
     },
 
@@ -61,27 +60,27 @@ module.exports = function (ctx) {
       // gzip: true,
       // analyze: true,
       // extractCSS: false,
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // cfg.module.rules.push({
         //   enforce: 'pre',
         //   test: /\.(js|vue)$/,
         //   loader: 'eslint-loader',
         //   exclude: /node_modules/
         // })
-      }
+      },
     },
 
     devServer: {
       // https: true,
       // port: 8080,
-      open: true // opens browser window automatically
+      open: true, // opens browser window automatically
     },
 
     // animations: 'all' --- includes all animations
     animations: [],
 
     ssr: {
-      pwa: false
+      pwa: false,
     },
 
     pwa: {
@@ -91,38 +90,38 @@ module.exports = function (ctx) {
         // name: 'Quasar App',
         // short_name: 'Quasar-PWA',
         // description: 'Best PWA App in town!',
-        display: 'standalone',
-        orientation: 'portrait',
-        background_color: '#ffffff',
-        theme_color: '#027be3',
-        icons: [
+        display:          'standalone',
+        orientation:      'portrait',
+        background_color: '#FFF',
+        theme_color:      '#027BE3',
+        icons:            [
           {
-            'src': 'statics/icons/icon-128x128.png',
+            'src':   'statics/icons/icon-128x128.png',
             'sizes': '128x128',
-            'type': 'image/png'
+            'type':  'image/png',
           },
           {
-            'src': 'statics/icons/icon-192x192.png',
+            'src':   'statics/icons/icon-192x192.png',
             'sizes': '192x192',
-            'type': 'image/png'
+            'type':  'image/png',
           },
           {
-            'src': 'statics/icons/icon-256x256.png',
+            'src':   'statics/icons/icon-256x256.png',
             'sizes': '256x256',
-            'type': 'image/png'
+            'type':  'image/png',
           },
           {
-            'src': 'statics/icons/icon-384x384.png',
+            'src':   'statics/icons/icon-384x384.png',
             'sizes': '384x384',
-            'type': 'image/png'
+            'type':  'image/png',
           },
           {
-            'src': 'statics/icons/icon-512x512.png',
+            'src':   'statics/icons/icon-512x512.png',
             'sizes': '512x512',
-            'type': 'image/png'
-          }
-        ]
-      }
+            'type':  'image/png',
+          },
+        ],
+      },
     },
 
     cordova: {
@@ -132,7 +131,7 @@ module.exports = function (ctx) {
     electron: {
       // bundler: 'builder', // or 'packager'
 
-      extendWebpack (cfg) {
+      extendWebpack(cfg) {
         // do something with Electron main process Webpack cfg
         // chainWebpack also available besides this extendWebpack
       },
@@ -154,7 +153,7 @@ module.exports = function (ctx) {
         // https://www.electron.build/configuration/configuration
 
         // appId: 'quasar-app'
-      }
-    }
+      },
+    },
   }
 }
