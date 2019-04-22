@@ -1,7 +1,8 @@
 # Feracode test
 
 ## DEMO
-https://fc.helio.me
+* Site: https://fc.helio.me
+* Video: DEMO.mp4 file
 
 ## Try
 #### Download dependencies
